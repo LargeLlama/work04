@@ -64,5 +64,18 @@ int main()
 	printf("length of s6: %d\n", length(s6));
 	printf("length of s7: %d\n", length(s7));
 
+	//The C library function char *strncpy(char *dest, const char *src, size_t n) copies up to n characters from the string pointed to, by src to dest.
+	//In a case where the length of src is less than that of n, the remainder of dest will be padded with null bytes.	
+
+	char *s8 = "ciao";
+	char s9[5];
+
+	printf("s8: %s\n", s8);
+	strncpy(s9, s8, 4);
+	printf("s9: %s\n", s9);
+
+	printf("length of s8: %d\n", length(s8));
+	printf("length of s9: %d\n", length(s9));
+	
 	return 0;
 }
