@@ -44,7 +44,7 @@ int main()
 
 	//given not enough room at all!
 	char *s4 = "hiya";
-	char s5[0];
+	char s5[2];
 
 	printf("s4: %s\n", s4);
 	strcpy(s5, s4);
@@ -71,7 +71,7 @@ int main()
 	char s9[5];
 
 	printf("s8: %s\n", s8);
-	strncpy(s9, s8, 4);
+	strncpy(s9, s8, 3);
 	printf("s9: %s\n", s9);
 
 	printf("length of s8: %d\n", length(s8));
